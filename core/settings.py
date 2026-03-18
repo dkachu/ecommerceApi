@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-((5vh7^f^8^pqws9yl^9tnx-7-wwwzfb6ed%low^e&fbus+m2x
 DEBUG = True
 
 #ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS=['https://ecommerceapi-production-af5a.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://ecommerceapi-production-af5a.up.railway.app']
 ALLOWED_HOST=["*"]
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Api',
     'rest_framework'
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -127,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
